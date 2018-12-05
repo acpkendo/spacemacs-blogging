@@ -1,4 +1,4 @@
-;;; packages.el --- blogging layer packages file for Spacemacs.
+;;; packages.el --- spacemacs-blogging layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
 ;;
@@ -18,22 +18,22 @@
 ;;
 ;;
 ;; Briefly, each package to be installed or configured by this layer should be
-;; added to `blogging-packages'. Then, for each package PACKAGE:
+;; added to `spacemacs-blogging-packages'. Then, for each package PACKAGE:
 ;;
 ;; - If PACKAGE is not referenced by any other Spacemacs layer, define a
-;;   function `blogging/init-PACKAGE' to load and initialize the package.
+;;   function `spacemacs-blogging/init-PACKAGE' to load and initialize the package.
 
 ;; - Otherwise, PACKAGE is already referenced by another Spacemacs layer, so
 ;;   define the functions `blogging/pre-init-PACKAGE' and/or
-;;   `blogging/post-init-PACKAGE' to customize the package as it is loaded.
+;;   `spacemacs-blogging/post-init-PACKAGE' to customize the package as it is loaded.
 
 ;;; Code:
 
-(defconst blogging-packages
+(defconst spacemacs-blogging-packages
     '(ox-hugo)
 )
 
-(defun blogging/init-ox-hugo ()
+(defun spacemacs-blogging/init-ox-hugo ()
     (use-package ox-hugo
     :ensure t
     :after ox)
