@@ -1,30 +1,28 @@
-#+TITLE: databases layer
+#+TITLE: blogging layer
 
-# The maximum height of the logo should be 200 pixels.
-[[img/databases.png]]
+This is licensed under the GPL v3.0. No warranty expressed or implied. But it should work.
 
-# TOC links should be GitHub style anchors.
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
 - [[#install][Install]]
 - [[#key-bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
+
+This is a simple layer I created to install blogging-related packages.
 
 * Install
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =databases= to the existing =dotspacemacs-configuration-layers= list in this
-file.
+
+You'll need to install the [[https://gohugo.io/][Hugo static site generator]]. Your Linux distribution probably has one of these, which you can install in the normal way (e.g. in Ubuntu):
+
+#+BEGIN_SRC bash
+$ sudo apt install hugo
+#+END_SRC
+
+Then, add ~blogging~ to your =~/.spacemacs=. You will need to add =blogging= to the existing =dotspacemacs-configuration-layers= list in this file.
+
 
 * Key bindings
 
-| Key Binding | Description    |
-|-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
-# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
-# Examples:
-# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
-# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
-# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.
+No additional keybindings outside of what the packages themselves provide.
+ 
