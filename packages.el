@@ -30,16 +30,13 @@
 ;;; Code:
 
 (defconst spacemacs-blogging-packages
-    '(ox-hugo ox-hugo-auto-export)
+    '(ox-hugo)
 )
 
 (defun spacemacs-blogging/init-ox-hugo ()
     (use-package ox-hugo
     :ensure t
     :after ox)
-)
-
-(defun spacemacs-blogging/init-ox-hugo-auto-export ()
     (use-package ox-hugo-auto-export)
 )
 
